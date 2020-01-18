@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+
+<form th:action="@{/findBook}" method="get">
+    <p>Id: <input type="id" th:name="id"/> </p>
+    <div class="clearfix">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<form action="#" th:action="@{/updateBook}" th:object="${book}" method="post">
+    <p>Title: <input type="text" th:field="${book.title}"/></p>
+    <p><input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </p>
+</form>
+</body>
+</html>

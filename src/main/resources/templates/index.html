@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>CRUD operations in Spring</h1>
+
+<form action="#" th:action="@{/createForm}" method="get">
+    <input type="submit" value="Create"/>
+</form>
+
+<br>
+
+<form action="#" th:action="@{/viewForm}" method="get">
+    <input type="submit" value="View"/>
+</form>
+
+<br>
+
+<form action="#" th:action="@{/create}" method="get">
+    <input type="submit" value="Update"/>
+</form>
+
+<br>
+
+<form action="#" th:action="@{/create}" method="get">
+    <input type="submit" value="Delete"/>
+</form>
+
+</body>
+</html>

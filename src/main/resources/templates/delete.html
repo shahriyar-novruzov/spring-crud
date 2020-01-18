@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Form</h1>
+
+<form th:action="@{/deleteBook}" method="get">
+    <input type="id" th:name="id" th:placeholder="Id"/>
+    <div class="clearfix">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
